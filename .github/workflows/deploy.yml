@@ -47,6 +47,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          branch: gh-pages
+          publish_branch: gh-pages
+          force_orphan: true
           custom_domain: ${{ secrets.CUSTOM_DOMAIN }}
           enforce_https: ${{ secrets.ENFORCE_HTTPS }}
