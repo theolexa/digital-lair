@@ -75,5 +75,3 @@ function generateRainbowGradient(seed: number, numColors: number) {
     }
     return htmlCss.join('')
   }
-
-  
