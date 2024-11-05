@@ -1,17 +1,16 @@
-import { useState } from 'react'
-import { useFiglet } from './useFiglet'
+import React from 'react'
+import useFiglet from './UseFiglet'
+import { applyRainbowFiglet } from './useRainbowGradient'
+import ColorBanner from './ColorBanner'
 
 
 function App() {
-  const bannerName = "the"
-  const bannerSurname = "olexa"
-  const bannerDomain = ".dev"
-  const figletStandardName = useFiglet(bannerName + bannerSurname + bannerDomain)
+  const bannerName = "theolexa.dev"
+  const figletStandardName = useFiglet(bannerName)
+  const rainbowFiglet = applyRainbowFiglet(figletStandardName)
 
   return (
-    <>
-      <pre>{figletStandardName}</pre>
-    </>
+      <ColorBanner data={rainbowFiglet} />
   )
 }
 

@@ -4,10 +4,18 @@
   font-weight: 400;
 
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  background-color: black; /* #242424; */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.banner-line {
+  width: 100%;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
 }
