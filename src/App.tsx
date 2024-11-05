@@ -1,5 +1,5 @@
 import React from 'react'
-import useFiglet from './UseFiglet'
+import useFiglet from './useFiglet'
 import { applyRainbowFiglet } from './useRainbowGradient'
 import ColorBanner from './ColorBanner'
 
