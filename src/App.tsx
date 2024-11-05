@@ -2,6 +2,7 @@ import React from 'react'
 import useFiglet from './useFiglet'
 import { applyRainbowFiglet } from './useRainbowGradient'
 import ColorBanner from './ColorBanner'
+import { Route, Routes } from "react-router-dom"
 
 
 function App() {
@@ -10,7 +11,12 @@ function App() {
   const rainbowFiglet = applyRainbowFiglet(figletStandardName)
 
   return (
-      <ColorBanner data={rainbowFiglet} />
+    <div className='banner-line'>
+      <Routes>
+        <Route path="/" element={<ColorBanner data={rainbowFiglet} />} />
+        <Route path="/projects" element={<div>projects</div>} />
+      </Routes>
+    </div>
   )
 }
 

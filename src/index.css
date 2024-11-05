@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color: rgba(255, 255, 255, 0.87);
-  background-color: black; /* #242424; */
+  background-color: #242424;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -12,7 +12,10 @@
 }
 
 .banner-line {
-  width: 100%;
+  background-color: black;
+  position: absolute;
+  width: 99%;
+  height: 99%;
   font-weight: bold;
   font-size: 12px;
   line-height: 1.1;
